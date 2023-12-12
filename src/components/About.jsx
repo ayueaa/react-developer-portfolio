@@ -32,9 +32,9 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 text-white text-[17px] max-w-3xl leading-[30px]">
-        Hi there! I'm a Python Developer with experience in frameworks like FastAPI and Flask. My skill set also extends
-        to web scraping with Scrapy, data analysis with Pandas, and big data processing with PySpark. I'm a beginner in
-        React to create web interfaces with low-code components, aspiring to become a Full Stack Developer.
+        Hi there! I&apos;m a Python Developer with experience in frameworks like FastAPI and Flask. My skill set also
+        extends to web scraping with Scrapy, data analysis with Pandas, and big data processing with PySpark. I&apos;m a
+        beginner in React to create web interfaces with low-code components, aspiring to become a Full Stack Developer.
         <a href="#contact" className="text-[#f0ba9d] text-[18px]">
           <p>Feel free to connect and discuss with me.</p>
         </a>
