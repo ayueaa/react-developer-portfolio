@@ -1,18 +1,18 @@
-import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
-import Typewriter from "typewriter-effect";
-import GreetingLottie from "../utils/DisplayLottie";
-import TextDecrypt from "../utils/TextDecrypt";
-import { coding } from "../assets";
-import { socials } from "../constants";
-import { SocialIcon } from "react-social-icons";
+import { motion } from 'framer-motion';
+import { SocialIcon } from 'react-social-icons';
+import Typewriter from 'typewriter-effect';
+
+import { coding } from '../assets';
+import { socials } from '../constants';
+import { styles } from '../styles';
+import { GreetingLottie } from '../utils';
 
 const SocialButtons = () => {
   return (
     <div>
       {socials.map((social, index) => (
         <SocialIcon
+          key={index}
           id={index}
           url={social.url}
           network={social.name}
@@ -42,11 +42,7 @@ const Hero = () => {
           <div className={`${styles.heroSubText} mt-2 text-white-100`}>
             <Typewriter
               options={{
-                strings: [
-                  "Python Engineer",
-                  "React Learner",
-                  "Full Stack Aspirant",
-                ],
+                strings: ['Python Engineer', 'React Learner', 'Full Stack Aspirant'],
                 autoStart: true,
                 loop: true,
                 deleteSpeed: 30,
@@ -54,14 +50,14 @@ const Hero = () => {
             />
           </div>
           {/* 社交软件图标 */}
-          <div style={{ marginTop: "120px" }}>
+          <div style={{ marginTop: '120px' }}>
             <SocialButtons />
           </div>
         </div>
 
         <div className="flex flex-1 justify-center items-end">
           {/* 使用容器元素包裹，并设置容器元素的样式 */}
-          <div style={{ width: "450px", height: "450px" }}>
+          <div style={{ width: '450px', height: '450px' }}>
             <GreetingLottie animationData={coding} />
           </div>
         </div>
@@ -77,7 +73,7 @@ const Hero = () => {
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: 'loop',
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />

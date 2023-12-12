@@ -1,0 +1,82 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:prettier/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "plugins": [
+        "react",
+        "react-hooks",
+        "simple-import-sort",
+        "import"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
+        "prettier/prettier": [
+            "warn"
+        ],
+        "simple-import-sort/imports": "warn",
+        "simple-import-sort/exports": "warn",
+        "import/no-duplicates": "warn",
+        "import/newline-after-import": "warn",
+        "newline-after-var": "warn",
+        "padding-line-between-statements": [
+            "warn",
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "block"
+            },
+            {
+                "blankLine": "always",
+                "prev": "block",
+                "next": "*"
+            },
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "block-like"
+            },
+            {
+                "blankLine": "always",
+                "prev": "block-like",
+                "next": "*"
+            },
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "return"
+            }
+        ]
+    }
+}
