@@ -1,5 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 
+// eslint-disable-next-line import/no-unresolved
 import { About, Blogs, Contact, Experience, Hero, Navbar, StarsCanvas, Tech, Works } from './components';
 
 const App = () => {

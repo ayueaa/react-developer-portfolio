@@ -9,9 +9,9 @@ import { slideIn } from '../utils/motion';
 import { EarthCanvas } from './canvas';
 
 const EmailJsSettings = {
-  ServiceID: 'service_a7jbgtr',
-  TemplateID: 'template_w3lvn7u',
-  PublicKey: 'SHrhrLORXYtYqk9ov',
+  ServiceID: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  TemplateID: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  PublicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
 };
 
 const Contact = () => {

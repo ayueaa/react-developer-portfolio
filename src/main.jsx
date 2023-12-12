@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import './index.css';
 
 import React from 'react';
