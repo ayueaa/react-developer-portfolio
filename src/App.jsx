@@ -6,11 +6,12 @@ import { About, Blogs, Contact, Experience, Hero, Navbar, StarsCanvas, Tech, Wor
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-gradient-to-r from-[#95C8E6] to-[#68A1B6]">
+      <div className="relative z-0">
         <div className="relative">
-          <video autoPlay loop muted playsInline className="w-full h-full object-cover">
+          <video autoPlay loop muted playsInline className="w-full h-full object-cover" poster="/src/assets/herobg.png">
+            <source src="/src/assets/herobg.webm" type="video/webm" />
             <source src="/src/assets/herobg.mp4" type="video/mp4" />
-            {/* 添加其他视频源，如 WebM 或 Ogg，以提供更好的兼容性 */}
+            Your browser does not support the video tag.
           </video>
           <div className="absolute inset-0">
             <Navbar />

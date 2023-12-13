@@ -9,8 +9,6 @@ import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
 
 const BlogCard = ({ index, title, description, wordCount, readCount, tags, image, articleLink }) => {
-  // options={{ max: 45, scale: 1, speed: 450 }}
-  //       className="bg-card p-5 rounded-2xl sm:w-[310px] w-full"
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)} onClick={() => window.open(articleLink, '_blank')}>
       <Tilt
