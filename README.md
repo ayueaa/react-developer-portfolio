@@ -51,7 +51,8 @@
 
 <br />
 
-This repository houses an innovative IP Management System developed with FastAPI. The system is enhanced with a modern UI/UX using Ant Design, and features such as typewriter-effect, react-lottie, and react-social-icons for an engaging user experience. Additionally, the project integrates ESLint and Prettier for code consistency and incorporates a stunning video background to enrich the visual presentation.
+This repository houses an innovative **React Developer Portfolio** developed with FastAPI. The system is enhanced with a modern UI/UX using Framer Motion, and features such as typewriter-effect, react-lottie, and react-social-icons for an engaging user experience. Additionally, the project integrates ESLint and Tailwind CSS for code consistency and incorporates a stunning video background to enrich the visual presentation.
+
 
 <!-- Features -->
 ### :rocket: Features

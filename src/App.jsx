@@ -12,6 +12,7 @@ import {
   StarsCanvas,
   Tech,
   Works,
+  // eslint-disable-next-line import/no-unresolved
 } from './components';
 
 const App = () => {
