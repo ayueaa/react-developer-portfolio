@@ -84,10 +84,6 @@ const socials = [
     url: 'https://github.com/ayueaa?tab=repositories',
   },
   {
-    name: 'twitter',
-    url: 'https://github.com/ayueaa?tab=repositories',
-  },
-  {
     name: 'facebook',
     url: 'https://github.com/ayueaa?tab=repositories',
   },
@@ -97,10 +93,6 @@ const socials = [
   },
   {
     name: 'wechat',
-    url: 'https://github.com/ayueaa?tab=repositories',
-  },
-  {
-    name: 'tiktok',
     url: 'https://github.com/ayueaa?tab=repositories',
   },
 ];
@@ -438,4 +430,10 @@ const githubRepos = {
   specfic: [],
 };
 
-export { blogs, experiences, githubRepos, projects, services, socials, technologies, testimonials };
+const thisProject = {
+  name: 'react-developer-portfolio',
+  githubLink: 'https://github.com/ayueaa/react-developer-portfolio',
+  description: 'Portfolio website create by ayuea',
+};
+
+export { blogs, experiences, githubRepos, projects, services, socials, technologies, testimonials, thisProject };

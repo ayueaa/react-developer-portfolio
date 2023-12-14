@@ -8,13 +8,12 @@ import { styles } from '../styles';
 // 提取导航链接渲染部分为独立组件
 const NavLinkItem = ({ id, title, active, handleClick }) => (
   <li
-    className={`${
+    className={`nav-link ${
       active === id ? 'text-white' : 'text-secondary'
-    } hover:text-white text-[18px] font-medium cursor-pointer`}
+    } hover:text-white text-[18px] sm:text-[16px] font-medium cursor-pointer`}
+    onClick={handleClick}
   >
-    <a href={`#${id}`} onClick={handleClick}>
-      {title}
-    </a>
+    <a href={`#${id}`}>{title}</a>
   </li>
 );
 
@@ -39,7 +38,7 @@ const Navbar = () => {
           } else {
             // 向上滚动，显示导航栏
             setScrolled(false); // 更新为 false，表示未滚动
-            setToggle(true);
+            // setToggle(true);
           }
 
           prevScrollPos = currentScrollPos;
@@ -79,17 +78,11 @@ const Navbar = () => {
         scrolled ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100'
       }`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center mx-auto max-w-md sm:max-w-lg md:max-w-xl lg:max-w-7xl">
         {/* 使用Link组件处理点击时滚动到顶部 */}
-        <Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img src={logo} alt="logo" className="w-12 h- object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
+        <Link to="/" className="flex items-center gap-2" onClick={() => window.scrollTo(0, 0)}>
+          <img src={logo} alt="logo" className="w-8 h-8 sm:w-12 sm:h-12 object-contain" />
+          <p className="text-white text-[14px] sm:text-[18px] font-bold cursor-pointer flex">
             Yue&apos;s &nbsp;
             <span className="sm:block hidden"> Portfolio</span>
           </p>

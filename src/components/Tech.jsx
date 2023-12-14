@@ -18,15 +18,16 @@ const Tech = () => {
       </motion.div>
       <div style={{ height: '50px' }}></div>
       {/* 使用 Flex 布局的容器 */}
-      <div className="flex flex-row justify-center items-center gap-10">
+      <div className="flex flex-row justify-center items-center gap-10 flex-wrap">
         {/* GreetingLottie 部分 */}
-        <div style={{ width: '450px', height: '300px' }}>
+        <div className="w-[300px] h-[200px] sm:w-[450px] sm:h-[300px]">
           <GreetingLottie animationData={build} />
         </div>
+
         {/* technologies 部分 */}
         <div className="flex flex-1 flex-wrap justify-center items-center">
           {technologies.map(technology => (
-            <div className="w-28 h-28" key={technology.name}>
+            <div className="w-20 h-20 sm:w-28 sm:h-28" key={technology.name}>
               <BallCanvas icon={technology.icon} />
             </div>
           ))}

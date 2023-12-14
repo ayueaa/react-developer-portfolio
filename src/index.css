@@ -49,6 +49,40 @@
   background: -webkit-linear-gradient(-90.13deg, 16b0a8c7  1.9%, #589c94 97.5%);
 }
 
+/* 在小屏幕上，设置卡片的最小宽度 */
+@media (max-width: 600px) {
+  .blog-card {
+    min-width: 100%; /* 或其他合适的宽度 */
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-menu {
+    padding: 4px 6px; /* 减小内边距 */
+  }
+
+  .nav-link {
+    font-size: 14px; /* 减小字体大小 */
+    margin-bottom: 8px; /* 减小链接之间的间距 */
+  }
+}
+
+.custom-social-icon {
+  height: 35px !important; /* 默认高度 */
+  width: 35px !important; /* 默认宽度 */
+}
+
+/* 在小屏幕上应用不同的样式 */
+@media (max-width: 600px) {
+  .custom-social-icon {
+    height: 1rem !important; /* 小屏幕高度 */
+    width: 1rem !important; /* 小屏幕宽度 */
+    top: 20px !important;
+
+  }
+}
+
+
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(

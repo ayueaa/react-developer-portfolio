@@ -13,7 +13,7 @@ const BlogCard = ({ index, title, description, wordCount, readCount, tags, image
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)} onClick={() => window.open(articleLink, '_blank')}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-[#e8f1f5] p-5 rounded-2xl sm:w-[350px] w-full"
+        className="bg-[#e8f1f5] p-5 rounded-2xl sm:w-[350px] w-full md:w-[300px] lg:w-[350px]"
         onClick={() => {
           console.log('Article link:', articleLink); // 测试输出
           window.open(articleLink, '_blank');
@@ -83,12 +83,9 @@ const Blogs = () => {
         >
           <Button type="text" className="text-white" icon={<DoubleLeftOutlined />} />
         </motion.div>
-        <div className="mt-20 flex overflow-x-auto" id="scroll-container" constyle={{ height: '520px' }}>
-          {' '}
-          {/* 设置足够的高度 */}
+        <div className="mt-20 flex overflow-x-auto" id="scroll-container">
           {blogs.map((blog, index) => (
-            <div className="inline-block mr-8 last:mr-0" key={`project-${index}`}>
-              {' '}
+            <div className="blog-card inline-block mr-8 last:mr-0" key={`project-${index}`}>
               <BlogCard index={index} {...blog} />
             </div>
           ))}
