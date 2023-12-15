@@ -15,11 +15,14 @@ import starbucks from './company/starbucks.png';
 import tesla from './company/tesla.png';
 import creator from './creator.png';
 import github from './github.png';
+import herobgPreview from './herobg.png';
+import herobgVideo from './herobg.webm';
 import ipmanage from './ipmanage.png';
 import jobit from './jobit.png';
 import logo from './logo.gif';
 import build from './lottie/build.json';
 import coding from './lottie/coding.json';
+import mainbg from './mainbg.jpg';
 import menu from './menu.svg';
 import mobile from './mobile.png';
 import css from './tech/css.png';
@@ -62,6 +65,8 @@ export {
   git,
   github,
   golang,
+  herobgPreview,
+  herobgVideo,
   html,
   ipmanage,
   javascript,
@@ -69,6 +74,7 @@ export {
   knownsec,
   linux,
   logo,
+  mainbg,
   menu,
   meta,
   mobile,
