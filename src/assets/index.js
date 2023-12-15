@@ -15,7 +15,7 @@ import starbucks from './company/starbucks.png';
 import tesla from './company/tesla.png';
 import creator from './creator.png';
 import github from './github.png';
-import herobgPreview from './herobg.png';
+import herobgPreview from './herobg.jpg';
 import herobgVideo from './herobg.webm';
 import ipmanage from './ipmanage.png';
 import jobit from './jobit.png';
