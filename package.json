@@ -4,14 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
     "@react-three/drei": "^9.56.24",
     "@react-three/fiber": "^8.11.1",
     "antd": "^5.12.1",
