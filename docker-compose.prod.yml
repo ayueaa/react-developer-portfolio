@@ -1,9 +1,10 @@
 version: '3.8'
 services:
   app:
+    image: react-developer-portfolio_app:prod
     build:
       context: .
-      image: react-developer-portfolio_app:prod
+      
       dockerfile: Dockerfile.prod
     ports:
       - "80:80"

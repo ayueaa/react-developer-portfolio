@@ -1,8 +1,8 @@
 version: '3.8'
 services:
   app:
-    build: .
     image: react-developer-portfolio_app:dev
+    build: .
     ports:
       - "5173:5173"
     environment:
