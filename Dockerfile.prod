@@ -3,6 +3,11 @@ FROM node:20.5.1 as build-stage
 
 WORKDIR /app
 
+# 更改 npm 的源为淘宝源
+RUN npm config set registry https://registry.npm.taobao.org
+RUN yarn config set registry https://registry.npm.taobao.org
+
+
 COPY package*.json ./
 RUN yarn install
 
