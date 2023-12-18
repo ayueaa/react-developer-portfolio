@@ -299,7 +299,7 @@ const projects = [
         color: 'text-orange-500', // 橙色
       },
     ],
-    image: jobit,
+    image: ipmanage,
     source_code_link: 'https://github.com/',
   },
 ];

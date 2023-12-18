@@ -18,6 +18,7 @@ import github from './github.png';
 import herobgPreview from './herobg.jpg';
 import herobgVideo from './herobg.webm';
 import herobgMbPreview from './herobg-mb.png';
+import herobgMbVideo from './herobg-mb.webm';
 import ipmanage from './ipmanage.png';
 import jobit from './jobit.png';
 import logo from './logo.gif';
@@ -67,6 +68,7 @@ export {
   github,
   golang,
   herobgMbPreview,
+  herobgMbVideo,
   herobgPreview,
   herobgVideo,
   html,

@@ -1,10 +1,12 @@
+import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-import { herobgMbPreview, herobgPreview } from './assets';
+import { herobgMbPreview, herobgMbVideo, herobgPreview, herobgVideo } from './assets';
 // eslint-disable-next-line import/no-unresolved
 import {
   About,
+  AnimatedButton,
   Blogs,
   Contact,
   Experience,
@@ -39,12 +41,12 @@ const App = () => {
 
       if (aspectRatio > 1.2) {
         return {
-          src: 'https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg.webm',
+          src: herobgVideo,
           poster: { herobgPreview }, // 替换为横向poster的路径
         };
       } else {
         return {
-          src: 'https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg-mb.webm',
+          src: herobgMbVideo,
           poster: { herobgMbPreview }, // 替换为纵向poster的路径
         };
       }
@@ -52,7 +54,7 @@ const App = () => {
 
     return (
       <div style={{ position: 'relative', width: '100%', minHeight: '500px' }}>
-        <video autoPlay loop muted playsInline poster={videoInfo.poster}>
+        <video autoPlay loop muted playsInline>
           <source src={videoInfo.src} type="video/webm" />
           Your browser does not support the video tag.
         </video>
@@ -71,6 +73,7 @@ const App = () => {
           <div className="absolute inset-0">
             <Navbar />
             <Hero />
+            <AnimatedButton href="#about" />
           </div>
         </div>
 
