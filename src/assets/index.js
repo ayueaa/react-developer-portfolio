@@ -25,6 +25,7 @@ import jobit from './jobit.png';
 import logo from './logo.gif';
 import build from './lottie/build.json';
 import coding from './lottie/coding.json';
+import coding2 from './lottie/coding2.json';
 import mainbg from './mainbg.jpg';
 import menu from './menu.svg';
 import mobile from './mobile.png';
@@ -61,6 +62,7 @@ export {
   cmb,
   cnpc,
   coding,
+  coding2,
   creator,
   css,
   docker,

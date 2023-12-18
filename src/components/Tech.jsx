@@ -33,7 +33,6 @@ const Tech = () => {
           ))}
         </div>
       </div>
-      {/* from-[#95C8E6] to-[#68A1B6] */}
       <div className="flex flex-col gap-8">
         {skills.map(skill => (
           <div key={skill.Stack}>
@@ -43,7 +42,7 @@ const Tech = () => {
               strokeColor={{ '0%': '#108ee9', '100%': '#87d068' }}
               status="active"
               aria-label={skill.Stack}
-              size={10}
+              width={10}
               showInfo={false}
             />
           </div>

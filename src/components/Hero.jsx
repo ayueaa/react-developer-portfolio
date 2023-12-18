@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import Typewriter from 'typewriter-effect';

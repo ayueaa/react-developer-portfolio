@@ -3,7 +3,7 @@ services:
   app:
     image: react-developer-portfolio_app:prod
     build:
-      context: .
+      context: ..
       
       dockerfile: Dockerfile.prod
     ports:

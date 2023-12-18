@@ -5,7 +5,7 @@ English | [简体中文](./README.zh_CN.md)
   <h1>React Developer Portfolio</h1>
   
   <p>
-    A modern personal portfolio built with React, Threejs, Framer Motion, and more.
+    一个使用 React、Threejs、Framer Motion 等技术构建的现代个人作品集。
   </p>
 
 <!-- Badges -->
@@ -32,10 +32,9 @@ English | [简体中文](./README.zh_CN.md)
 </p>
 
  <h4>
-    <a href="https://your-live-demo-link.com/">View Demo</a>
+    <a href="https://your-live-demo-link.com/">查看 Demo</a>
   <span> · </span>
-    <a href="https://github.com/ayueaa/react-developer-portfolio/issues/">Report Bug</a>
-
+    <a href="https://github.com/ayueaa/react-developer-portfolio/issues/">报告问题</a>
   </h4>
 </div>
 
@@ -43,7 +42,7 @@ English | [简体中文](./README.zh_CN.md)
 
 
 <!-- About the Project -->
-## :star2: About the Project
+## :star2: 关于项目
 
 <div align="center">
   <img src="readme_assets/portfolio-preview.png" height="auto" width="90%"/>
@@ -51,52 +50,53 @@ English | [简体中文](./README.zh_CN.md)
 
 <br />
 
-This repository houses an innovative **React Developer Portfolio** developed with React. The system is enhanced with a modern UI/UX using Framer Motion, and features such as typewriter-effect, react-lottie, and react-social-icons for an engaging user experience. Additionally, the project integrates ESLint and Tailwind CSS for code consistency and incorporates a stunning video background to enrich the visual presentation.
+这个仓库包含了一个创新的 **React 开发者作品集**，该作品集使用 React 开发。系统通过 Framer Motion 实现了现代化的用户界面/用户体验，并且具有打字机效果、react-lottie 和 react-social-icons 等功能，以提供引人入胜的用户体验。此外，该项目集成了 ESLint 和 Tailwind CSS 以确保代码的一致性，并包含了一个惊艳的视频背景，以丰富视觉呈现。
 
 
 <!-- Features -->
-### :rocket: Features
+### :rocket: 特性
 
-- **Framer Motion**: Utilized for adding smooth and sophisticated animations, Framer Motion enhances user interactions, making the portfolio more engaging and visually appealing.
-- **Three.js**: Incorporated to render 3D graphics directly in the web browser using WebGL. This brings an extra layer of depth and immersion, allowing for stunning visual effects and interactive 3D elements.
-- **Responsive Design**: Fully responsive layout that looks great on all devices, from mobile phones to desktop computers.
-- **Modern UI/UX**: A sleek and modern user interface, designed with user experience in mind, ensuring easy navigation and a pleasant browsing experience.
+- **Framer Motion**：用于添加流畅而精致的动画，Framer Motion 增强了用户互动，使作品集更具吸引力和视觉上的吸引力。
+- **Three.js**：用于直接在 Web 浏览器中使用 WebGL 渲染 3D 图形。这为网站增加了额外的深度和沉浸感，允许展示惊艳的视觉效果和互动 3D 元素。
+- **响应式设计**：完全响应式布局，在从手机到桌面电脑的所有设备上看起来都很棒。
+- **现代化的用户界面/用户体验**：时尚且现代的用户界面，以用户体验为设计核心，确保易于导航和愉悦的浏览体验。
 
-- **Video Background**: Enhancing visual appeal with a captivating video background.
+- **视频背景**：用迷人的视频背景增强视觉吸引力。
+
 
 <br />
 
 <!-- Getting Started -->
-## :toolbox: Getting Started
+## :toolbox: 入门指南
 
 <!-- Modify the installation and running locally steps as per your project's requirement -->
 
-### :gear: Installation
+### :gear: 安装
 
 #### Step 1:
-Clone the repository:
+克隆仓库:
 
 ```bash
 git clone https://github.com/ayueaa/react-developer-portfolio.git
 ```
 #### Step 2:
-Navigate to the project directory and install dependencies:
+导航至项目目录并安装依赖:
 ```bash
 npm install --legacy-peer-deps
 ```
-or use yarn:
+或使用yarn:
 ```bash
 yarn install
 ```
 
 #### Step 3:
 
-At the main folder execute the following command in console to run the development server:
+在主文件夹中执行以下命令在控制台运行开发服务器:
 
 ```bash
 npm run dev
 ```
-or use yarn:
+或者使用yarn:
 ```bash
 yarn dev
 ```
@@ -104,7 +104,7 @@ yarn dev
 ### :running: Run Prodction
 #### Step 1:
 
-At the main folder execute the following command in console to creates a build directory with a production build of portfolio:
+在主文件夹中执行以下命令在控制台创建一个包含作品集生产构建的构建目录:
 
 ```bash
   npm run build
@@ -112,15 +112,15 @@ At the main folder execute the following command in console to creates a build d
 
 #### Step 2:
 
-At the main folder execute the following command in console to run the server:
+在主文件夹中执行以下命令在控制台运行服务器:
 
 ```bash
   npm run start
 ```
 
-## :gem: Acknowledgements
+## :gem: 致谢
 
-This section is used to mention useful resources and libraries that were used in the React Developer Portfolio project:
+此部分用于提及在 React 开发者作品集项目中使用的有用资源和库:
 
 - [Email JS](https://www.emailjs.com/)
 - [Framer Motion](https://www.framer.com/motion/)
@@ -134,7 +134,7 @@ This section is used to mention useful resources and libraries that were used in
 - [Prettier](https://prettier.io/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">回到顶部</a>)</p>
 
 <p align="center">
   <img src="https://github.com/ayueaa/react-developer-portfolio/blob/master/src/assets/title.png" height="auto" width="10%" />

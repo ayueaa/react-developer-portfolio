@@ -75,8 +75,8 @@
 /* 在小屏幕上应用不同的样式 */
 @media (max-width: 600px) {
   .custom-social-icon {
-    height: 1rem !important; /* 小屏幕高度 */
-    width: 1rem !important; /* 小屏幕宽度 */
+    height: 2rem !important; /* 小屏幕高度 */
+    width: 2rem !important; /* 小屏幕宽度 */
     top: 20px !important;
 
   }
