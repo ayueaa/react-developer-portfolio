@@ -1,6 +1,7 @@
+import { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-import { herobgPreview, herobgVideo, mainbg } from './assets';
+import { herobgMbPreview, herobgPreview } from './assets';
 // eslint-disable-next-line import/no-unresolved
 import {
   About,
@@ -17,6 +18,48 @@ import {
 } from './components';
 
 const App = () => {
+  const BackgroundVideo = () => {
+    const [videoInfo, setVideoInfo] = useState(getVideoInfo());
+
+    useEffect(() => {
+      function handleResize() {
+        setVideoInfo(getVideoInfo());
+      }
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
+    // 根据屏幕宽度决定视频源和poster
+    function getVideoInfo() {
+      const aspectRatio = window.innerWidth / window.innerHeight;
+
+      if (aspectRatio > 1.2) {
+        return {
+          src: 'https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg.webm',
+          poster: { herobgPreview }, // 替换为横向poster的路径
+        };
+      } else {
+        return {
+          src: 'https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg-mb.webm',
+          poster: { herobgMbPreview }, // 替换为纵向poster的路径
+        };
+      }
+    }
+
+    return (
+      <div style={{ position: 'relative', width: '100%', minHeight: '500px' }}>
+        <video autoPlay loop muted playsInline poster={videoInfo.poster}>
+          <source src={videoInfo.src} type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    );
+  };
+
   return (
     <BrowserRouter>
       <div className="relative z-0">
@@ -24,18 +67,7 @@ const App = () => {
         <PageFloatButtons />
         {/* 背景视频,hero页及菜单栏 */}
         <div className="relative">
-          <video autoPlay loop muted playsInline className="video-portrait">
-            {/* 使用外链获取,减轻服务器带宽压力 */}
-            <source src="https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg-mb.webm" type="video/webm" />
-            {/* <source src="src/assets/herobg-mb.webm" type="video/webm" /> */}
-            Your browser does not support the video tag.
-          </video>
-
-          <video autoPlay loop muted playsInline className="video-landscape">
-            <source src="https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg.webm" type="video/webm" />
-            {/* <source src="src/assets/herobg.webm" type="video/webm" /> */}
-            Your browser does not support the video tag.
-          </video>
+          <BackgroundVideo />
           <div className="absolute inset-0">
             <Navbar />
             <Hero />
