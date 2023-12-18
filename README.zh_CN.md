@@ -1,4 +1,4 @@
-English | [简体中文](./README.zh_CN.md)
+[English](./README.md) | 简体中文
 <a name="readme-top"></a>
 <div align="center">
 
