@@ -1,8 +1,7 @@
-import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-import { herobgMbPreview, herobgMbVideo, herobgPreview, herobgVideo } from './assets';
+import { herobgGif, herobgMbPreview, herobgMbVideo, herobgPreview, herobgVideo } from './assets';
 // eslint-disable-next-line import/no-unresolved
 import {
   About,
@@ -21,11 +20,11 @@ import {
 
 const App = () => {
   const BackgroundVideo = () => {
-    const [videoInfo, setVideoInfo] = useState(getVideoInfo());
+    const [videoInfo, setVideoInfo] = useState(getBackgroundInfo());
 
     useEffect(() => {
       function handleResize() {
-        setVideoInfo(getVideoInfo());
+        setVideoInfo(getBackgroundInfo());
       }
 
       window.addEventListener('resize', handleResize);
@@ -36,30 +35,30 @@ const App = () => {
     }, []);
 
     // 根据屏幕宽度决定视频源和poster
-    function getVideoInfo() {
+    function getBackgroundInfo() {
       const aspectRatio = window.innerWidth / window.innerHeight;
 
       if (aspectRatio > 1.2) {
-        return {
-          src: 'https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg.webm',
-          poster: { herobgPreview }, // 替换为横向poster的路径
-        };
+        return (
+          <div style={{ position: 'relative', width: '100%', minHeight: '500px' }}>
+            <video autoPlay loop muted playsInline poster={herobgPreview}>
+              <source src="https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg.webm" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        );
       } else {
-        return {
-          src: 'https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg-mb.webm',
-          poster: { herobgMbPreview }, // 替换为纵向poster的路径
-        };
+        return (
+          <img
+            src="https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg-mb.gif"
+            alt="Background"
+            style={{ width: '100%', minHeight: '500px' }}
+          />
+        );
       }
     }
 
-    return (
-      <div style={{ position: 'relative', width: '100%', minHeight: '500px' }}>
-        <video autoPlay loop muted playsInline poster={videoInfo.poster}>
-          <source src={videoInfo.src} type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    );
+    return videoInfo;
   };
 
   return (

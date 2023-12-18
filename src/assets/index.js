@@ -17,6 +17,7 @@ import creator from './creator.png';
 import github from './github.png';
 import herobgPreview from './herobg.jpg';
 import herobgVideo from './herobg.webm';
+import herobgGif from './herobg-mb.gif';
 import herobgMbPreview from './herobg-mb.png';
 import herobgMbVideo from './herobg-mb.webm';
 import ipmanage from './ipmanage.png';
@@ -67,6 +68,7 @@ export {
   git,
   github,
   golang,
+  herobgGif,
   herobgMbPreview,
   herobgMbVideo,
   herobgPreview,
