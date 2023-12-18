@@ -41,12 +41,12 @@ const App = () => {
 
       if (aspectRatio > 1.2) {
         return {
-          src: herobgVideo,
+          src: 'https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg.webm',
           poster: { herobgPreview }, // 替换为横向poster的路径
         };
       } else {
         return {
-          src: herobgMbVideo,
+          src: 'https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg-mb.webm',
           poster: { herobgMbPreview }, // 替换为纵向poster的路径
         };
       }
@@ -54,7 +54,7 @@ const App = () => {
 
     return (
       <div style={{ position: 'relative', width: '100%', minHeight: '500px' }}>
-        <video autoPlay loop muted playsInline>
+        <video autoPlay loop muted playsInline poster={videoInfo.poster}>
           <source src={videoInfo.src} type="video/webm" />
           Your browser does not support the video tag.
         </video>
