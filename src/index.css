@@ -82,6 +82,21 @@
   }
 }
 
+/* 默认隐藏横屏视频 */
+.video-landscape {
+  display: none;
+}
+
+/* 在横屏时隐藏竖屏视频，显示横屏视频 */
+@media screen and (orientation: landscape) {
+  .video-portrait {
+      display: none;
+  }
+  .video-landscape {
+      display: block;
+  }
+}
+
 
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */

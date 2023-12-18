@@ -35,9 +35,7 @@ const About = () => {
         Hi there! I&apos;m a Python Developer with experience in frameworks like FastAPI and Flask. My skill set also
         extends to web scraping with Scrapy, data analysis with Pandas, and big data processing with PySpark. I&apos;m a
         beginner in React to create web interfaces with low-code components, aspiring to become a Full Stack Developer.
-        <a href="#contact" className="text-[#f0ba9d] text-[18px]">
-          <p>Feel free to connect and discuss with me.</p>
-        </a>
+        Feel free to connect and discuss with me
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

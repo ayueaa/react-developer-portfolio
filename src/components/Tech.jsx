@@ -43,7 +43,7 @@ const Tech = () => {
               strokeColor={{ '0%': '#108ee9', '100%': '#87d068' }}
               status="active"
               aria-label={skill.Stack}
-              strokeWidth={10}
+              size={10}
               showInfo={false}
             />
           </div>

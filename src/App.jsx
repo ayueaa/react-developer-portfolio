@@ -24,8 +24,16 @@ const App = () => {
         <PageFloatButtons />
         {/* 背景视频,hero页及菜单栏 */}
         <div className="relative">
-          <video autoPlay loop muted playsInline className="w-full h-full object-cover" poster={herobgPreview}>
-            <source src={herobgVideo} type="video/webm" />
+          <video autoPlay loop muted playsInline className="video-portrait">
+            {/* 使用外链获取,减轻服务器带宽压力 */}
+            <source src="https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg-mb.webm" type="video/webm" />
+            {/* <source src="src/assets/herobg-mb.webm" type="video/webm" /> */}
+            Your browser does not support the video tag.
+          </video>
+
+          <video autoPlay loop muted playsInline className="video-landscape">
+            <source src="https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/herobg.webm" type="video/webm" />
+            {/* <source src="src/assets/herobg.webm" type="video/webm" /> */}
             Your browser does not support the video tag.
           </video>
           <div className="absolute inset-0">
@@ -37,7 +45,8 @@ const App = () => {
         <div
           className="relative z-0"
           style={{
-            backgroundImage: `url(${mainbg})`,
+            // backgroundImage: `url(${mainbg})`,
+            backgroundImage: 'url("https://wy-portfolio.oss-cn-chengdu.aliyuncs.com/mainbg.jpg")',
 
             backgroundRepeat: 'no-repeat',
             // 设置背景大小，这里可以使用 cover 或 contain，具体取决于你的需求
