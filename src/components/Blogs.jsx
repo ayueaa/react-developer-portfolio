@@ -7,6 +7,7 @@ import { blogs } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
+import { MoreButton } from '.';
 
 const BlogCard = ({ index, title, description, wordCount, readCount, tags, image, articleLink }) => {
   return (
@@ -83,34 +84,14 @@ const Blogs = () => {
         >
           <Button type="text" className="text-white" icon={<DoubleLeftOutlined />} />
         </motion.div>
-        <div className="mt-20 flex overflow-x-auto" id="scroll-container">
+        <div className="mt-20 flex overflow-x-auto width: 100%;" id="scroll-container">
           {blogs.map((blog, index) => (
             <div className="blog-card inline-block mr-8 last:mr-0" key={`project-${index}`}>
               <BlogCard index={index} {...blog} />
             </div>
           ))}
           {/* Read More 按钮+动效 */}
-          <motion.div
-            className="inline-flex items-center"
-            animate={{ x: [0, 5, 0] }} // 水平方向动画
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              repeatType: 'loop',
-            }}
-          >
-            <Button
-              type="link"
-              icon={<FileSearchOutlined />}
-              size="large"
-              onClick={() => {
-                window.open('https://www.jianshu.com/u/5dc678c15567', '_blank');
-              }}
-              className="text-white"
-            >
-              <p>Read More.</p>
-            </Button>
-          </motion.div>
+          <MoreButton href="https://www.jianshu.com/u/5dc678c15567" />
         </div>
         {/* 向右滚动按钮动效 */}
         <motion.div

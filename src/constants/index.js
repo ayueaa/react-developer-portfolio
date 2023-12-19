@@ -13,8 +13,10 @@ import {
   docker,
   git,
   golang,
+  herobgPreview,
   html,
   ipmanage,
+  ipmanageBackend,
   javascript,
   jobit,
   knownsec,
@@ -22,6 +24,7 @@ import {
   mobile,
   mongodb,
   mysql,
+  preview,
   python,
   reactjs,
   redis,
@@ -240,9 +243,30 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Malicious IP Backend',
+    name: 'React Developer PortFolio',
     description:
-      'A backend implementation of an IP management platform, developed using FastAPI, JWT authentication, and MongoDB. It serves as the backend code repository for a frontend-backend separated project',
+      'A modern personal portfolio built with React, Threejs, Framer Motion, and more. Can be used as a template for personal websites.',
+    tags: [
+      {
+        name: 'react',
+        color: 'text-cyan-500', // 青色
+      },
+      {
+        name: 'threejs',
+        color: 'text-red-500', // 红色
+      },
+      {
+        name: 'tailwindcss',
+        color: 'text-orange-500', // 橙色
+      },
+    ],
+    image: preview,
+    source_code_link: 'https://github.com/ayueaa/react-developer-portfolio',
+  },
+  {
+    name: 'FastAPI IP Manage',
+    description:
+      'A backend project developed using FastAPI, with MongoDB and JWT and includes a user system. Great for learning FastAPI or as a starter for new projects.',
     tags: [
       {
         name: 'python',
@@ -257,50 +281,29 @@ const projects = [
         color: 'text-pink-500', // 粉红色
       },
     ],
-    image: ipmanage,
+    image: ipmanageBackend,
     source_code_link: 'https://github.com/ayueaa/fastapi-ip-manage',
   },
   {
-    name: 'Malicious IP Frontend',
+    name: 'React IP Admin',
     description:
-      'A backend implementation of an IP management platform, developed using FastAPI, JWT authentication, and MongoDB. It serves as the backend code repository for a frontend-backend separated project',
+      'A fronted project developed using React, with Typescript, Redux and Antd. It is the best practice to use React+hooks+antd.',
     tags: [
-      {
-        name: 'scrapy',
-        color: 'text-purple-500', // 紫色
-      },
       {
         name: 'react',
         color: 'text-cyan-500', // 青色
       },
       {
-        name: 'scrapyd',
+        name: 'typescript',
+        color: 'text-purple-500', // 紫色
+      },
+      {
+        name: 'Antd',
         color: 'text-yellow-500', // 黄色
       },
     ],
     image: ipmanage,
-    source_code_link: 'https://github.com/ayueaa/fastapi-ip-manage',
-  },
-  {
-    name: 'Spider&Manage',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-    tags: [
-      {
-        name: 'react',
-        color: 'text-cyan-500', // 青色
-      },
-      {
-        name: 'antd',
-        color: 'text-red-500', // 红色
-      },
-      {
-        name: 'react-redux',
-        color: 'text-orange-500', // 橙色
-      },
-    ],
-    image: ipmanage,
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/ayueaa/react-antd-ip-admin',
   },
 ];
 

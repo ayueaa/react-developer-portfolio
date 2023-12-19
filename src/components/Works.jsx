@@ -6,13 +6,17 @@ import { projects } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
+import { MoreButton } from '.';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-      <Tilt options={{ max: 45, scale: 1, speed: 450 }} className="bg-card p-5 rounded-2xl sm:w-[310px] w-full">
+      <Tilt
+        options={{ max: 45, scale: 1, speed: 450 }}
+        className="bg-card p-5 rounded-2xl sm:w-[310px] w-full min-h-[500px]"
+      >
         <div className="relative w-full  h-[230px]">
-          <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl" />
+          <img src={image} alt={name} className="w-full h-full object-cover object-left rounded-2xl" />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, '_blank')}
@@ -53,11 +57,12 @@ const Works = () => {
           complex problems, work with different technologies, and manage projects effectively.
         </motion.p>
       </div>
-
       <div className="mt-20 flex flex-wrap gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
+        {/* Read More 按钮+动效 */}
+        <MoreButton href="https://github.com/ayueaa?tab=repositories" />
       </div>
     </>
   );

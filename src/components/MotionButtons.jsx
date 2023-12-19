@@ -1,3 +1,5 @@
+import { DoubleLeftOutlined, DoubleRightOutlined, FileSearchOutlined } from '@ant-design/icons';
+import { Button, Tag } from 'antd';
 import { motion } from 'framer-motion';
 import React from 'react';
 
@@ -23,4 +25,22 @@ const AnimatedButton = ({ href, className }) => {
   );
 };
 
-export default AnimatedButton;
+const MoreButton = ({ href, className }) => {
+  return (
+    <motion.div
+      className={`inline-flex items-center ${className}`}
+      animate={{ x: [0, 5, 0] }} // 水平方向动画
+      transition={{
+        duration: 2,
+        repeat: Infinity,
+        repeatType: 'loop',
+      }}
+    >
+      <Button type="link" icon={<FileSearchOutlined />} size="large" href={href} target="_blank" className="text-white">
+        <p>Read More.</p>
+      </Button>
+    </motion.div>
+  );
+};
+
+export { AnimatedButton, MoreButton };

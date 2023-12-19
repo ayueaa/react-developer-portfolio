@@ -21,6 +21,7 @@ import herobgGif from './herobg-mb.gif';
 import herobgMbPreview from './herobg-mb.png';
 import herobgMbVideo from './herobg-mb.webm';
 import ipmanage from './ipmanage.png';
+import ipmanageBackend from './ipmanage-backend.png';
 import jobit from './jobit.png';
 import logo from './logo.gif';
 import build from './lottie/build.json';
@@ -29,6 +30,7 @@ import coding2 from './lottie/coding2.json';
 import mainbg from './mainbg.jpg';
 import menu from './menu.svg';
 import mobile from './mobile.png';
+import preview from './portfolio-preview.png';
 import css from './tech/css.png';
 import docker from './tech/docker.png';
 import figma from './tech/figma.png';
@@ -77,6 +79,7 @@ export {
   herobgVideo,
   html,
   ipmanage,
+  ipmanageBackend,
   javascript,
   jobit,
   knownsec,
@@ -89,6 +92,7 @@ export {
   mongodb,
   mysql,
   nodejs,
+  preview,
   python,
   reactjs,
   redis,
