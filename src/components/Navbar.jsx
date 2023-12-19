@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 import { close, logo, menu } from '../assets';
@@ -18,6 +19,7 @@ const NavLinkItem = ({ id, title, active, handleClick }) => (
 );
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -83,8 +85,8 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2" onClick={() => window.scrollTo(0, 0)}>
           <img src={logo} alt="logo" className="w-8 h-8 sm:w-12 sm:h-12 object-contain" />
           <p className="text-white text-[14px] sm:text-[18px] font-bold cursor-pointer flex">
-            Yue&apos;s &nbsp;
-            <span className="sm:block hidden"> Portfolio</span>
+            {t('title')}
+            {/* <span className="sm:block hidden"> Portfolio</span> */}
           </p>
         </Link>
 
@@ -94,7 +96,7 @@ const Navbar = () => {
             <NavLinkItem
               key={nav.id}
               id={nav.id}
-              title={nav.title}
+              title={t(nav.titleKey)}
               active={active}
               handleClick={() => {
                 setToggle(!toggle);
@@ -122,7 +124,7 @@ const Navbar = () => {
                 <NavLinkItem
                   key={nav.id}
                   id={nav.id}
-                  title={nav.title}
+                  title={t(nav.titleKey)}
                   active={active}
                   handleClick={() => {
                     setToggle(!toggle);

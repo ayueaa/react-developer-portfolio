@@ -18,7 +18,6 @@ import {
   ipmanage,
   ipmanageBackend,
   javascript,
-  jobit,
   knownsec,
   linux,
   mobile,
@@ -39,45 +38,45 @@ import {
 export const navLinks = [
   {
     id: 'about',
-    title: 'About',
+    titleKey: 'navBar.about',
   },
   {
     id: 'work',
-    title: 'Work',
+    titleKey: 'navBar.work',
   },
   {
     id: 'tech',
-    title: 'Tech',
+    titleKey: 'navBar.tech',
   },
   {
     id: 'project',
-    title: 'Project',
+    titleKey: 'navBar.project',
   },
   {
     id: 'blog',
-    title: 'Blog',
+    titleKey: 'navBar.blog',
   },
   {
     id: 'contact',
-    title: 'Contact',
+    titleKey: 'navBar.contact',
   },
 ];
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'about.cardTitle.1',
     icon: web,
   },
   {
-    title: 'React Learner',
+    title: 'about.cardTitle.2',
     icon: mobile,
   },
   {
-    title: 'Backend Developer',
+    title: 'about.cardTitle.3',
     icon: backend,
   },
   {
-    title: 'Content Creator',
+    title: 'about.cardTitle.4',
     icon: creator,
   },
 ];
@@ -176,44 +175,36 @@ export const skills = [
 
 const experiences = [
   {
-    title: 'Documentation Engineer',
-    company_name: 'CNPC',
+    title: 'experience.detail.0.title',
+    company_name: 'experience.detail.0.company_name',
     icon: cnpc,
     iconBg: '#E6DEDD',
-    date: 'Sep 2015 - May 2019',
-    points: ['Python automation for file management and supplies calculation', 'Technical support'],
+    date: 'experience.detail.0.date',
+    points: 'experience.detail.0.points',
   },
   {
-    title: 'Data Engineer',
-    company_name: 'CMB',
+    title: 'experience.detail.1.title',
+    company_name: 'Cexperience.detail.1.company_name',
     icon: cmb,
     iconBg: '#E6DEDD',
-    date: 'Sep 2019 - Nov 2020',
-    points: [
-      'Backend design and development of application systems, including Django, Flask, Tornado',
-      'Data ETL process handling',
-      'Providing data query microservices API',
-    ],
+    date: 'experience.detail.1.date',
+    points: 'experience.detail.1.points',
   },
   {
-    title: 'Senior Python Engineer',
-    company_name: 'Knownsec',
+    title: 'experience.detail.2.title',
+    company_name: 'experience.detail.1.company_name',
     icon: knownsec,
     iconBg: '#E6DEDD',
-    date: 'Nov 2020 - Mar 2022',
-    points: [
-      'Backend RESTful API development for B2B products',
-      'App backend development',
-      'Setting up CI/CD Pipeline',
-    ],
+    date: 'experience.detail.2.date',
+    points: 'experience.detail.2.points',
   },
   {
-    title: 'Backend Development Specialist',
-    company_name: '360',
+    title: 'experience.detail.3.title',
+    company_name: 'experience.detail.3.company_name',
     icon: s360,
     iconBg: '#E6DEDD',
-    date: 'Mar 2022 - Present',
-    points: ['Spark Data processing', 'Intelligence data flow management', 'Scrapy | FastAPI | Kafka | Spark | React'],
+    date: 'experience.detail.3.date',
+    points: 'experience.detail.3.points',
   },
 ];
 

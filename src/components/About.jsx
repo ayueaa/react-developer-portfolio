@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Tilt from 'react-tilt';
 
 import { services } from '../constants';
@@ -24,25 +25,26 @@ const ServiceCard = ({ index, title, icon }) => (
 
 // About 组件
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>{t('about.title')}</p>
+        <h2 className={styles.sectionHeadText}>{t('about.subTitle')}</h2>
       </motion.div>
 
       <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 text-white text-[17px] max-w-3xl leading-[30px]">
-        Hi there! I&apos;m a Python Developer with experience in frameworks like FastAPI and Flask. My skill set also
-        extends to web scraping with Scrapy, data analysis with Pandas, and big data processing with PySpark. I&apos;m a
-        beginner in React to create web interfaces with low-code components, aspiring to become a Full Stack Developer.
-        Feel free to connect and discuss with me
+        {t('about.content')}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {/* 使用 ServiceCard 组件 */}
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+        {services.map((service, index) => {
+          const localizedTitle = t(`about.cardTitle.${index}`);
+
+          return <ServiceCard key={localizedTitle} index={index} {...service} title={localizedTitle} />;
+        })}
       </div>
     </>
   );

@@ -22,15 +22,17 @@ import herobgMbPreview from './herobg-mb.png';
 import herobgMbVideo from './herobg-mb.webm';
 import ipmanage from './ipmanage.png';
 import ipmanageBackend from './ipmanage-backend.png';
-import jobit from './jobit.png';
 import logo from './logo.gif';
 import build from './lottie/build.json';
 import coding from './lottie/coding.json';
 import coding2 from './lottie/coding2.json';
 import mainbg from './mainbg.jpg';
 import menu from './menu.svg';
+import message from './message.gif';
 import mobile from './mobile.png';
 import preview from './portfolio-preview.png';
+import setting from './setting.gif';
+import star from './star.gif';
 import css from './tech/css.png';
 import docker from './tech/docker.png';
 import figma from './tech/figma.png';
@@ -50,6 +52,8 @@ import spark from './tech/spark.png';
 import tailwind from './tech/tailwind.png';
 import threejs from './tech/threejs.svg';
 import typescript from './tech/typescript.png';
+import toup from './toup.gif';
+import translate from './translate.png';
 import web from './web.png';
 
 export {
@@ -81,12 +85,12 @@ export {
   ipmanage,
   ipmanageBackend,
   javascript,
-  jobit,
   knownsec,
   linux,
   logo,
   mainbg,
   menu,
+  message,
   meta,
   mobile,
   mongodb,
@@ -98,12 +102,16 @@ export {
   redis,
   redux,
   s360,
+  setting,
   shopify,
   spark,
+  star,
   starbucks,
   tailwind,
   tesla,
   threejs,
+  toup,
+  translate,
   typescript,
   web,
 };

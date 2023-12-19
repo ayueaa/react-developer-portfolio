@@ -65,7 +65,13 @@ const App = () => {
     <BrowserRouter>
       <div className="relative z-0">
         {/*  全局悬浮按钮 */}
-        <PageFloatButtons />
+        <PageFloatButtons
+          shape="circle"
+          style={{
+            right: 94,
+          }}
+        />
+
         {/* 背景视频,hero页及菜单栏 */}
         <div className="relative">
           <BackgroundVideo />

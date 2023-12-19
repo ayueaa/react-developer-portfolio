@@ -4,7 +4,7 @@ import Blogs from './Blogs';
 import { BallCanvas, EarthCanvas, StarsCanvas } from './canvas';
 import Contact from './Contact';
 import Experience from './Experience';
-import PageFloatButtons from './FloatButtons';
+import { PageFloatButtons } from './FloatButtons';
 import Hero from './Hero';
 import CanvasLoader from './Loader';
 import { AnimatedButton, MoreButton, ScrollArrowButton } from './MotionButtons';

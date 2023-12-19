@@ -2,6 +2,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import { motion } from 'framer-motion';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 
 import { experiences } from '../constants';
@@ -45,18 +46,24 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <p className={styles.sectionSubText}>{t('experience.title')}</p>
+        <h2 className={styles.sectionHeadText}>{t('experience.subTitle')}</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
-          ))}
+          {experiences.map((experience, index) => {
+            // 国际化
+            const localizedExperience = t(`experience.detail.${index}`, { returnObjects: true });
+            const combinedExperience = { ...experience, ...localizedExperience };
+
+            return <ExperienceCard key={index} experience={combinedExperience} />;
+          })}
         </VerticalTimeline>
       </div>
     </>

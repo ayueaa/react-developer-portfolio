@@ -1,5 +1,4 @@
-import { DoubleLeftOutlined, DoubleRightOutlined } from '@ant-design/icons';
-import { Button, Tag } from 'antd';
+import { Tag } from 'antd';
 import { motion } from 'framer-motion';
 import Tilt from 'react-tilt';
 

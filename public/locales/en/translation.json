@@ -1,0 +1,115 @@
+{
+  "title": "Yue's Portfolio",
+  "navBar": {
+    "about": "About",
+    "work": "Work",
+    "tech": "Tech",
+    "project": "Project",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "hello": "Hi, I'm",
+    "name": "Yue",
+    "typeWords": ["Python Engineer", "React Learner", "Full Stack Aspirant"]
+  },
+  "about": {
+    "title": "Introduction",
+    "subTitle": "Overview.",
+    "content": "Hi there! I'm a Python Developer with experience in frameworks like FastAPI and Flask. My skill set also extends to web scraping with Scrapy, data analysis with Pandas, and big data processing with PySpark. I'm beginner in React to create web interfaces with low-code components, aspiring to become a Full Stack Developer.Feel free to connect and discuss with me.",
+    "cardTitle": {
+      "0": "Web Developer",
+      "1": "React Learner",
+      "2": "Backend Developer",
+      "3": "Content Creator"
+    }
+  },
+  "experience": {
+    "title": "What I have done so far",
+    "subTitle": "Work Experience.",
+    "detail": {
+      "0": {
+        "title": "Documentation Engineer",
+        "company_name": "CNPC",
+        "date": "Sep 2015 - May 2019",
+        "points": ["Python automation for file management and supplies calculation", "Technical support"]
+      },
+      "1": {
+        "title": "Data Engineer",
+        "company_name": "CMB",
+        "date": "Sep 2019 - Nov 2020",
+        "points": [
+          "Backend design and development of application systems, including Django, Flask, Tornado",
+          "Data ETL process handling",
+          "Providing data query microservices API"
+        ]
+      },
+      "2": {
+        "title": "Senior Python Engineer",
+        "company_name": "Knownsec",
+        "date": "Nov 2020 - Mar 2022",
+        "points": [
+          "Backend RESTful API development for B2B products",
+          "App backend development",
+          "Setting up CI/CD Pipeline"
+        ]
+      },
+      "3": {
+        "title": "Backend Development Specialist",
+        "company_name": "360",
+        "date": "Mar 2022 - Present",
+        "points": [
+          "Spark Data processing",
+          "Intelligence data flow management",
+          "Scrapy | FastAPI | Kafka | Spark | React"
+        ]
+      }
+    }
+  },
+  "tech": {
+    "title": "MY SKILLS",
+    "subTitle": "Technologies."
+  },
+  "work": {
+    "title": "MY WORK",
+    "subTitle": "Projects.",
+    "content": "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
+    "card": {
+      "0": {
+        "title": "React Developer PortFolio",
+        "desc": "A modern personal portfolio built with React, Threejs, Framer Motion, and more. Can be used as a template for personal websites."
+      },
+      "1": {
+        "title": "FastAPI IP Manage",
+        "desc": "A backend project developed using FastAPI, with MongoDB and JWT and includes a user system. Great for learning FastAPI or as a starter for new projects."
+      },
+      "2": {
+        "title": "React IP Admin",
+        "desc": "A fronted project developed using React, with Typescript, Redux and Antd. It is the best practice to use React+hooks+antd."
+      }
+    }
+  },
+  "blog": {
+    "title": "MY BLOGS",
+    "subTitle": "Blogs.",
+    "content": "My blog delves into meaningful problem-solving approaches, learning new technologies and languages, with a focus on databases, big data, and backend frameworks. Primarily centered around Python, the posts offer insightful examples and discussions. These articles serve as a resource for those interested in innovative solutions and the exploration of emerging tech trends in the programming world.",
+    "card": {
+      "0": {
+        "title": "React Developer PortFolio",
+        "desc": "A modern personal portfolio built with React, Threejs, Framer Motion, and more. Can be used as a template for personal websites."
+      },
+      "1": {
+        "title": "FastAPI IP Manage",
+        "desc": "A backend project developed using FastAPI, with MongoDB and JWT and includes a user system. Great for learning FastAPI or as a starter for new projects."
+      },
+      "2": {
+        "title": "React IP Admin",
+        "desc": "A fronted project developed using React, with Typescript, Redux and Antd. It is the best practice to use React+hooks+antd."
+      }
+    }
+  },
+  "contact": {
+    "title": "What I have done so far",
+    "subTitle": "Work Experience."
+  }
+}

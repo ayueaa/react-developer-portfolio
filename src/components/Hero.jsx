@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { SocialIcon } from 'react-social-icons';
 import Typewriter from 'typewriter-effect';
 
@@ -19,6 +20,7 @@ const SocialButtons = () => {
 
 const Hero = () => {
   // 横向屏幕flex左右展示,竖向屏幕上下展示
+  const { t } = useTranslation();
   const [isHorizontalLayout, setIsHorizontalLayout] = useState(window.innerWidth / window.innerHeight > 1.2);
 
   useEffect(() => {
@@ -46,12 +48,12 @@ const Hero = () => {
         >
           <div className="flex flex-col justify-center">
             <h1 className={`${styles.heroHeadText}`}>
-              Hi, I&apos;m <span className="text-[#915EFF]">Yue</span>
+              {t('hero.hello')} <span className="text-[#915EFF]">{t('hero.name')}</span>
             </h1>
             <div className={`${styles.heroSubText} mt-2 text-white-100`}>
               <Typewriter
                 options={{
-                  strings: ['Python Engineer', 'React Learner', 'Full Stack Aspirant'],
+                  strings: t('hero.typeWords', { returnObjects: true }),
                   autoStart: true,
                   loop: true,
                   deleteSpeed: 30,

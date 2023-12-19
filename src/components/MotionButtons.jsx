@@ -1,8 +1,6 @@
 import { DoubleLeftOutlined, DoubleRightOutlined, FileSearchOutlined } from '@ant-design/icons';
-import { Button, Tag } from 'antd';
-import { icons } from 'antd/es/image/PreviewGroup';
+import { Button } from 'antd';
 import { motion } from 'framer-motion';
-
 import React from 'react';
 
 const AnimatedButton = ({ href, className }) => {
