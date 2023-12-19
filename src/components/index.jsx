@@ -7,7 +7,7 @@ import Experience from './Experience';
 import PageFloatButtons from './FloatButtons';
 import Hero from './Hero';
 import CanvasLoader from './Loader';
-import { AnimatedButton, MoreButton } from './MotionButtons';
+import { AnimatedButton, MoreButton, ScrollArrowButton } from './MotionButtons';
 import Navbar from './Navbar';
 import Tech from './Tech';
 import Works from './Works';
@@ -25,6 +25,7 @@ export {
   MoreButton,
   Navbar,
   PageFloatButtons,
+  ScrollArrowButton,
   StarsCanvas,
   Tech,
   Works,

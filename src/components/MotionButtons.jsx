@@ -1,6 +1,8 @@
 import { DoubleLeftOutlined, DoubleRightOutlined, FileSearchOutlined } from '@ant-design/icons';
 import { Button, Tag } from 'antd';
+import { icons } from 'antd/es/image/PreviewGroup';
 import { motion } from 'framer-motion';
+
 import React from 'react';
 
 const AnimatedButton = ({ href, className }) => {
@@ -43,4 +45,26 @@ const MoreButton = ({ href, className }) => {
   );
 };
 
-export { AnimatedButton, MoreButton };
+const ScrollArrowButton = ({ direction, scroll, className }) => {
+  // 根据方向设置动画的初始和终止值
+  const animateX = direction === 'left' ? [-10, 10, -10] : [10, -10, 10];
+  // 根据方向设置按钮的图标
+  const icon = direction === 'left' ? <DoubleLeftOutlined /> : <DoubleRightOutlined />;
+
+  return (
+    <motion.div
+      animate={{ x: animateX }} // 水平方向动画
+      transition={{
+        duration: 1.5,
+        repeat: Infinity,
+        repeatType: 'loop',
+      }}
+      className={`scroll-arrow ${direction} ${className}`}
+      onClick={() => scroll(direction)}
+    >
+      <Button type="text" className="text-white" icon={icon} />
+    </motion.div>
+  );
+};
+
+export { AnimatedButton, MoreButton, ScrollArrowButton };

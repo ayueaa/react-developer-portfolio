@@ -1,4 +1,4 @@
-import { DoubleLeftOutlined, DoubleRightOutlined, FileSearchOutlined } from '@ant-design/icons';
+import { DoubleLeftOutlined, DoubleRightOutlined } from '@ant-design/icons';
 import { Button, Tag } from 'antd';
 import { motion } from 'framer-motion';
 import Tilt from 'react-tilt';
@@ -7,7 +7,7 @@ import { blogs } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
-import { MoreButton } from '.';
+import { MoreButton, ScrollArrowButton } from '.';
 
 const BlogCard = ({ index, title, description, wordCount, readCount, tags, image, articleLink }) => {
   return (
@@ -72,18 +72,7 @@ const Blogs = () => {
       </div>
       <div className="relative mt-20 flex">
         {/* 向左滚动按钮动效 */}
-        <motion.div
-          animate={{ x: [-10, 10, -10] }} // 水平方向动画
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            repeatType: 'loop',
-          }}
-          className="scroll-arrow left"
-          onClick={() => scroll('left')}
-        >
-          <Button type="text" className="text-white" icon={<DoubleLeftOutlined />} />
-        </motion.div>
+        <ScrollArrowButton direction="left" scroll={scroll} />
         <div className="mt-20 flex overflow-x-auto width: 100%;" id="scroll-container">
           {blogs.map((blog, index) => (
             <div className="blog-card inline-block mr-8 last:mr-0" key={`project-${index}`}>
@@ -94,18 +83,7 @@ const Blogs = () => {
           <MoreButton href="https://www.jianshu.com/u/5dc678c15567" />
         </div>
         {/* 向右滚动按钮动效 */}
-        <motion.div
-          animate={{ x: [10, -10, 10] }} // 水平方向动画
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            repeatType: 'loop',
-          }}
-          className="scroll-arrow right"
-          onClick={() => scroll('right')}
-        >
-          <Button type="text" className="text-white" icon={<DoubleRightOutlined />} />
-        </motion.div>
+        <ScrollArrowButton direction="right" scroll={scroll} />
       </div>
     </>
   );
