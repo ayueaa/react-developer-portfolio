@@ -1,5 +1,6 @@
 import { Tag } from 'antd';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import Tilt from 'react-tilt';
 
 import { blogs } from '../constants';
@@ -9,6 +10,8 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { MoreButton, ScrollArrowButton } from '.';
 
 const BlogCard = ({ index, title, description, wordCount, readCount, tags, image, articleLink }) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)} onClick={() => window.open(articleLink, '_blank')}>
       <Tilt
@@ -25,7 +28,7 @@ const BlogCard = ({ index, title, description, wordCount, readCount, tags, image
         <div className="mt-3">
           <h3 className="text-[#333333] font-bold text-[20px]">{title}</h3>
           <p className="text-[#888888] text-[13px]">
-            Words: {wordCount} | Reads: {readCount}
+            {t('blog.words')}: {wordCount} | {t('blog.reads')}: {readCount}
           </p>
           <p className="mt-2 text-[#666666] text-[14px] ">{description}</p>
         </div>
@@ -42,6 +45,8 @@ const BlogCard = ({ index, title, description, wordCount, readCount, tags, image
 };
 
 const Blogs = () => {
+  const { t } = useTranslation();
+
   const scroll = direction => {
     const container = document.getElementById('scroll-container');
     const scrollAmount = 400; // 每次滚动的像素量
@@ -57,16 +62,13 @@ const Blogs = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Blogs</p>
-        <h2 className={styles.sectionHeadText}>Blogs.</h2>
+        <p className={styles.sectionSubText}>{t('blog.title')}</p>
+        <h2 className={styles.sectionHeadText}>{t('blog.subTitle')}</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-3 text-white text-[17px] max-w-3xl leading-[30px]">
-          My blog delves into meaningful problem-solving approaches, learning new technologies and languages, with a
-          focus on databases, big data, and backend frameworks. Primarily centered around Python, the posts offer
-          insightful examples and discussions. These articles serve as a resource for those interested in innovative
-          solutions and the exploration of emerging tech trends in the programming world.
+          {t('blog.content')}
         </motion.p>
       </div>
       <div className="relative mt-20 flex">

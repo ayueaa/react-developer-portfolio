@@ -1,5 +1,6 @@
 import { Progress } from 'antd';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 import { build } from '../assets';
 import { skills, technologies } from '../constants';
@@ -10,11 +11,13 @@ import { textVariant } from '../utils/motion';
 import { BallCanvas } from './canvas';
 
 const Tech = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My skills</p>
-        <h2 className={styles.sectionHeadText}>Technologies.</h2>
+        <p className={styles.sectionSubText}>{t('tech.title')}</p>
+        <h2 className={styles.sectionHeadText}>{t('tech.subTitle')}</h2>
       </motion.div>
       <div style={{ height: '50px' }}></div>
       {/* 使用 Flex 布局的容器 */}
@@ -34,19 +37,23 @@ const Tech = () => {
         </div>
       </div>
       <div className="flex flex-col gap-8">
-        {skills.map(skill => (
-          <div key={skill.Stack}>
-            <span>{skill.Stack}</span>
-            <Progress
-              percent={skill.progressPercentage}
-              strokeColor={{ '0%': '#108ee9', '100%': '#87d068' }}
-              status="active"
-              aria-label={skill.Stack}
-              width={10}
-              showInfo={false}
-            />
-          </div>
-        ))}
+        {skills.map(skill => {
+          const localStack = t(skill.Stack);
+
+          return (
+            <div key={localStack}>
+              <span>{localStack}</span>
+              <Progress
+                percent={skill.progressPercentage}
+                strokeColor={{ '0%': '#108ee9', '100%': '#87d068' }}
+                status="active"
+                aria-label={localStack}
+                width={10}
+                showInfo={false}
+              />
+            </div>
+          );
+        })}
       </div>
     </>
   );

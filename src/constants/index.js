@@ -64,19 +64,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'about.cardTitle.1',
+    title: 'about.cardTitle.0',
     icon: web,
   },
   {
-    title: 'about.cardTitle.2',
+    title: 'about.cardTitle.1',
     icon: mobile,
   },
   {
-    title: 'about.cardTitle.3',
+    title: 'about.cardTitle.2',
     icon: backend,
   },
   {
-    title: 'about.cardTitle.4',
+    title: 'about.cardTitle.3',
     icon: creator,
   },
 ];
@@ -160,15 +160,15 @@ const technologies = [
 
 export const skills = [
   {
-    Stack: 'Backend', //Insert stack or technology you have experience in
+    Stack: 'tech.skill.0', //Insert stack or technology you have experience in
     progressPercentage: '90', //Insert relative proficiency in percentage
   },
   {
-    Stack: 'Programming',
+    Stack: 'tech.skill.1',
     progressPercentage: '90',
   },
   {
-    Stack: 'Frontend/Design',
+    Stack: 'tech.skill.2',
     progressPercentage: '50',
   },
 ];
@@ -208,35 +208,10 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial: 'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  },
-];
-
 const projects = [
   {
-    name: 'React Developer PortFolio',
-    description:
-      'A modern personal portfolio built with React, Threejs, Framer Motion, and more. Can be used as a template for personal websites.',
+    name: 'work.card.0.name',
+    description: 'work.card.0.description',
     tags: [
       {
         name: 'react',
@@ -255,9 +230,8 @@ const projects = [
     source_code_link: 'https://github.com/ayueaa/react-developer-portfolio',
   },
   {
-    name: 'FastAPI IP Manage',
-    description:
-      'A backend project developed using FastAPI, with MongoDB and JWT and includes a user system. Great for learning FastAPI or as a starter for new projects.',
+    name: 'work.card.1.name',
+    description: 'work.card.1.description',
     tags: [
       {
         name: 'python',
@@ -276,9 +250,8 @@ const projects = [
     source_code_link: 'https://github.com/ayueaa/fastapi-ip-manage',
   },
   {
-    name: 'React IP Admin',
-    description:
-      'A fronted project developed using React, with Typescript, Redux and Antd. It is the best practice to use React+hooks+antd.',
+    name: 'work.card.2.name',
+    description: 'work.card.2.description',
     tags: [
       {
         name: 'react',
@@ -430,4 +403,4 @@ const thisProject = {
   description: 'Portfolio website create by ayuea',
 };
 
-export { blogs, experiences, githubRepos, projects, services, socials, technologies, testimonials, thisProject };
+export { blogs, experiences, githubRepos, projects, services, socials, technologies, thisProject };

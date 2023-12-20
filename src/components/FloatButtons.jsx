@@ -7,7 +7,7 @@ import { thisProject } from '../constants';
 // 全局悬浮按钮
 const PageFloatButtons = () => {
   // 嵌入国际化中英文切换按钮
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'zh' : 'en';
@@ -17,16 +17,21 @@ const PageFloatButtons = () => {
 
   return (
     <div>
-      <FloatButton.Group trigger="click" style={{ opacity: 0.7 }} icon={<img src={setting} />} tooltip="Tools">
-        <FloatButton icon={<img src={translate} />} onClick={toggleLanguage} tooltip="English/中文" />
+      <FloatButton.Group
+        trigger="click"
+        style={{ opacity: 0.7 }}
+        icon={<img src={setting} />}
+        tooltip={t('floatButton.mainTip')}
+      >
+        <FloatButton icon={<img src={translate} />} onClick={toggleLanguage} tooltip={t('floatButton.transTip')} />
         <FloatButton
           icon={<img src={star} />}
-          tooltip="Star me on GitHub!"
+          tooltip={t('floatButton.starTip')}
           href={thisProject.githubLink}
           target="_bank"
         />
-        <FloatButton icon={<img src={message} />} tooltip="Contact me!" href="#contact" />
-        <FloatButton.BackTop icon={<img src={toup} />} visibilityHeight={0} tooltip="To top" />
+        <FloatButton icon={<img src={message} />} tooltip={t('floatButton.emailTip')} href="#contact" />
+        <FloatButton.BackTop icon={<img src={toup} />} visibilityHeight={0} tooltip={t('floatButton.topTip')} />
       </FloatButton.Group>
     </div>
   );

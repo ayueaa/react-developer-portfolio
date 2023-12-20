@@ -9,7 +9,7 @@ RUN npm config set registry https://registry.npm.taobao.org
 RUN yarn config set registry https://registry.npm.taobao.org
 
 # 复制 package.json 和 package-lock.json（如果存在）
-COPY ../package*.json ./
+COPY package*.json ./
 
 # 安装项目依赖
 RUN yarn install

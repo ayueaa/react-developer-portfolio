@@ -68,7 +68,12 @@
   },
   "tech": {
     "title": "MY SKILLS",
-    "subTitle": "Technologies."
+    "subTitle": "Technologies.",
+    "skill": {
+      "0": "Backend",
+      "1": "Programming",
+      "2": "Frontend/Design"
+    }
   },
   "work": {
     "title": "MY WORK",
@@ -76,16 +81,16 @@
     "content": "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
     "card": {
       "0": {
-        "title": "React Developer PortFolio",
-        "desc": "A modern personal portfolio built with React, Threejs, Framer Motion, and more. Can be used as a template for personal websites."
+        "name": "React Developer PortFolio",
+        "description": "A modern personal portfolio built with React, Threejs, Framer Motion, and more. Can be used as a template for personal websites."
       },
       "1": {
-        "title": "FastAPI IP Manage",
-        "desc": "A backend project developed using FastAPI, with MongoDB and JWT and includes a user system. Great for learning FastAPI or as a starter for new projects."
+        "name": "FastAPI IP Manage",
+        "description": "A backend project developed using FastAPI, with MongoDB and JWT and includes a user system. Great for learning FastAPI or as a starter for new projects."
       },
       "2": {
-        "title": "React IP Admin",
-        "desc": "A fronted project developed using React, with Typescript, Redux and Antd. It is the best practice to use React+hooks+antd."
+        "name": "React IP Admin",
+        "description": "A fronted project developed using React, with Typescript, Redux and Antd. It is the best practice to use React+hooks+antd."
       }
     }
   },
@@ -93,23 +98,31 @@
     "title": "MY BLOGS",
     "subTitle": "Blogs.",
     "content": "My blog delves into meaningful problem-solving approaches, learning new technologies and languages, with a focus on databases, big data, and backend frameworks. Primarily centered around Python, the posts offer insightful examples and discussions. These articles serve as a resource for those interested in innovative solutions and the exploration of emerging tech trends in the programming world.",
-    "card": {
-      "0": {
-        "title": "React Developer PortFolio",
-        "desc": "A modern personal portfolio built with React, Threejs, Framer Motion, and more. Can be used as a template for personal websites."
-      },
-      "1": {
-        "title": "FastAPI IP Manage",
-        "desc": "A backend project developed using FastAPI, with MongoDB and JWT and includes a user system. Great for learning FastAPI or as a starter for new projects."
-      },
-      "2": {
-        "title": "React IP Admin",
-        "desc": "A fronted project developed using React, with Typescript, Redux and Antd. It is the best practice to use React+hooks+antd."
-      }
-    }
+    "words": "Words",
+    "reads": "Reads"
   },
   "contact": {
-    "title": "What I have done so far",
-    "subTitle": "Work Experience."
+    "title": "Get in touch",
+    "subTitle": "Contact.",
+    "form": {
+      "name": "Your Name",
+      "defaultName": "What's your name?",
+      "email": "Your email",
+      "defaultEmail": "What's your email?",
+      "message": "Your Message",
+      "defaultMessage": "What do you want to say?"
+    },
+    "send": "Send",
+    "sendLoading": "Sending...",
+    "sendSuccess": "Thank you. I will get back to you as soon as possible.",
+    "sendFail": "Something went wrong."
+  },
+  "readMore": "Read More.",
+  "floatButton": {
+    "mainTip": "Tools",
+    "transTip": "English/中文",
+    "starTip": "Star me on GitHub!",
+    "emailTip": "Contact me!",
+    "topTip": "To top"
   }
 }

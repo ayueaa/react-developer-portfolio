@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import Tilt from 'react-tilt';
 
 import { github } from '../assets';
@@ -43,24 +44,31 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 };
 
 const Works = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My work</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <p className={styles.sectionSubText}>{t('work.title')}</p>
+        <h2 className={styles.sectionHeadText}>{t('work.subTitle')}</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-3 text-white text-[17px] max-w-3xl leading-[30px]">
-          Following projects showcases my skills and experience through real-world examples of my work. Each project is
-          briefly described with links to code repositories and live demos in it. It reflects my ability to solve
-          complex problems, work with different technologies, and manage projects effectively.
+          {t('work.content')}
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-8">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        {projects.map((project, index) => {
+          // 国际化
+          const localizedProject = {
+            ...project,
+            name: t(project.name),
+            description: t(project.description),
+          };
+
+          return <ProjectCard key={`project-${index}`} index={index} {...localizedProject} />;
+        })}
         {/* Read More 按钮+动效 */}
         <MoreButton href="https://github.com/ayueaa?tab=repositories" />
       </div>

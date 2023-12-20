@@ -1,74 +1,114 @@
 {
-  "title": "Yue's 作品集",
+  "title": "Yue的作品集",
   "navBar": {
     "about": "关于",
     "work": "工作",
-    "tech": "技术栈",
+    "tech": "技术",
     "project": "项目",
     "blog": "博客",
-    "contact": "联系"
+    "contact": "联系我"
   },
   "hero": {
-    "hello": "Hi, 我是",
+    "hello": "嗨，我是",
     "name": "Yue",
-    "typeWords": ["Python工程师", "React leaner", "Full Stack Aspirant"]
+    "typeWords": ["Python工程师", "React开发者", "全栈开发追求者"]
   },
   "about": {
     "title": "简介",
-    "subTitle": "概览.",
-    "content": "你好！我是一名有着丰富 FastAPI 和 Flask 经验的 Python 开发者。我的技能集还扩展到了使用 Scrapy 进行网页抓取，使用 Pandas 进行数据分析，以及使用 PySpark 进行大数据处理。我是一个 React 初学者，用低代码组件创建 Web 界面，渴望成为全栈开发者。欢迎联系并与我讨论。",
-    "cardTitle": {
-      "0": "Web Developer",
-      "1": "React Learner",
-      "2": "Backend Developer",
-      "3": "Content Creator"
-    }
+    "subTitle": "概览",
+    "content": "作为一名Python后端开发工程师，我擅长运用Flask和FastAPI等框架开发高效的Restful API，并能够有效地与前端团队进行沟通协作。同时我也具备使用Scrapy、Pandas和Spark处理大数据流程的能力。此外，我能够运用React实现简单的全栈页面开发。我致力于不断进步，努力成为一名全面的全栈开发者。"
   },
   "experience": {
-    "title": "我迄今为止的工作",
-    "subTitle": "工作经验.",
+    "title": "我的职业历程",
+    "subTitle": "工作经历",
     "detail": {
       "0": {
         "title": "文档工程师",
         "company_name": "中国石油天然气集团公司",
         "date": "2015年9月 - 2019年5月",
-        "points": ["用 Python 实现文件管理和供应计算的自动化", "技术支持"]
+        "points": ["负责文件管理和供应计算的 Python 自动化", "提供技术支持"]
       },
       "1": {
         "title": "数据工程师",
         "company_name": "招商银行",
         "date": "2019年9月 - 2020年11月",
         "points": [
-          "包括 Django、Flask、Tornado 在内的应用系统的后端设计与开发",
-          "数据 ETL 流程处理",
+          "负责应用系统的后端设计与开发，包括 Django、Flask、Tornado",
+          "处理数据 ETL 流程",
           "提供数据查询微服务 API"
         ]
       },
       "2": {
-        "title": "资深 Python 工程师",
+        "title": "高级 Python 工程师",
         "company_name": "知道创宇",
         "date": "2020年11月 - 2022年3月",
-        "points": ["为 B2B 产品开发后端 RESTful API", "应用程序后端开发", "设置 CI/CD 流水线"]
+        "points": ["为 B2B 产品开发后端 RESTful API", "负责应用程序后端开发", "建立 CI/CD 流水线"]
       },
       "3": {
         "title": "后端开发专家",
-        "company_name": "360",
+        "company_name": "奇虎360",
         "date": "2022年3月 - 至今",
-        "points": ["Spark 数据处理", "智能数据流管理", "Scrapy | FastAPI | Kafka | Spark | React"]
+        "points": ["负责 Spark 数据处理", "智能数据流管理", "熟练使用 Scrapy、FastAPI、Kafka、Spark、React"]
       }
     }
   },
   "tech": {
-    "title": "About Us",
-    "content": "Here is some information about us."
+    "title": "我的技能",
+    "subTitle": "技术栈",
+    "skill": {
+      "0": "后端开发",
+      "1": "编程能力",
+      "2": "前端/设计"
+    }
   },
   "work": {
-    "title": "About Us",
-    "content": "Here is some information about us."
+    "title": "我的作品",
+    "subTitle": "项目展示",
+    "content": "以下项目展示了我通过实际工作经验积累的技能。每个项目都有简要的描述，包括代码仓库和现场演示链接。它们展示了我解决复杂问题的能力，对不同技术的应用，以及有效的项目管理。",
+    "card": {
+      "0": {
+        "name": "React Developer PortFolio",
+        "description": "一个使用 React开发的现代化的个人作品集, 结合Threejs、Framer Motion 等技术构建。可以作为个人网站的模板。"
+      },
+      "1": {
+        "name": "FastAPI IP Manage",
+        "description": "一个使用 FastAPI 开发的后端项目，包括 MongoDB 和 JWT 用户系统。非常适合学习 FastAPI 或作为新项目的起点。"
+      },
+      "2": {
+        "name": "React IP Admin",
+        "description": "一个使用 React 开发的前端项目，结合了 Typescript、Redux 和 Antd。是使用 React+hooks+antd 的最佳实践。"
+      }
+    }
   },
   "blog": {
-    "title": "About Us",
-    "content": "Here is some information about us."
+    "title": "我的博客",
+    "subTitle": "博客文章",
+    "content": "我的博客深入探讨解决问题的方法、学习新技术和语言，专注于数据库、大数据和后端框架。主要围绕 Python，文章提供了有见地的示例和讨论。这些文章是对那些对创新解决方案感兴趣，以及对编程世界中新兴技术趋势探索感兴趣的人的资源。",
+    "words": "字数",
+    "reads": "阅读数"
   },
-  "contact": {}
+  "contact": {
+    "title": "联系我",
+    "subTitle": "联系方式",
+    "form": {
+      "name": "你的姓名",
+      "defaultName": "你叫什么名字？",
+      "email": "你的电子邮箱",
+      "defaultEmail": "你的邮箱是什么？",
+      "message": "你的留言",
+      "defaultMessage": "你想说些什么？"
+    },
+    "send": "发送",
+    "sendLoading": "正在发送...",
+    "sendSuccess": "感谢您的联系，我已收到并会尽快回复您。",
+    "sendFail": "发送出错。"
+  },
+  "readMore": "更多.",
+  "floatButton": {
+    "mainTip": "工具",
+    "transTip": "English/中文",
+    "starTip": "在 GitHub 上给我Star！",
+    "emailTip": "联系我！",
+    "topTip": "回到顶部"
+  }
 }

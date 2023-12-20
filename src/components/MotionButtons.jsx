@@ -2,6 +2,7 @@ import { DoubleLeftOutlined, DoubleRightOutlined, FileSearchOutlined } from '@an
 import { Button } from 'antd';
 import { motion } from 'framer-motion';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const AnimatedButton = ({ href, className }) => {
   return (
@@ -26,6 +27,8 @@ const AnimatedButton = ({ href, className }) => {
 };
 
 const MoreButton = ({ href, className }) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       className={`inline-flex items-center ${className}`}
@@ -37,7 +40,7 @@ const MoreButton = ({ href, className }) => {
       }}
     >
       <Button type="link" icon={<FileSearchOutlined />} size="large" href={href} target="_blank" className="text-white">
-        <p>Read More.</p>
+        <p>{t('readMore')}</p>
       </Button>
     </motion.div>
   );

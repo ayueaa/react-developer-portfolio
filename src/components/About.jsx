@@ -41,7 +41,7 @@ const About = () => {
       <div className="mt-20 flex flex-wrap gap-10">
         {/* 使用 ServiceCard 组件 */}
         {services.map((service, index) => {
-          const localizedTitle = t(`about.cardTitle.${index}`);
+          const localizedTitle = t(service.title);
 
           return <ServiceCard key={localizedTitle} index={index} {...service} title={localizedTitle} />;
         })}

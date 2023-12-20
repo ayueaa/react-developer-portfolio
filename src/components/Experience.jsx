@@ -59,10 +59,15 @@ const Experience = () => {
         <VerticalTimeline>
           {experiences.map((experience, index) => {
             // 国际化
-            const localizedExperience = t(`experience.detail.${index}`, { returnObjects: true });
-            const combinedExperience = { ...experience, ...localizedExperience };
+            const localizedExperience = {
+              ...experience,
+              title: t(experience.title),
+              company_name: t(experience.company_name),
+              date: t(experience.date),
+              points: t(experience.points, { returnObjects: true }), // 确保点是数组
+            };
 
-            return <ExperienceCard key={index} experience={combinedExperience} />;
+            return <ExperienceCard key={index} experience={localizedExperience} />;
           })}
         </VerticalTimeline>
       </div>
