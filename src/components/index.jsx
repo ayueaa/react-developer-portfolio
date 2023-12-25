@@ -5,10 +5,12 @@ import { BallCanvas, EarthCanvas, StarsCanvas } from './canvas';
 import Contact from './Contact';
 import Experience from './Experience';
 import { PageFloatButtons } from './FloatButtons';
+import Footer from './Footer';
 import Hero from './Hero';
 import CanvasLoader from './Loader';
-import { AnimatedButton, MoreButton, ScrollArrowButton } from './MotionButtons';
+import { AnimatedButton, DownArrowButton, MoreButton, ScrollArrowButton } from './MotionButtons';
 import Navbar from './Navbar';
+import NotFoundPage from './NotFoundPage';
 import Tech from './Tech';
 import Works from './Works';
 
@@ -19,11 +21,14 @@ export {
   Blogs,
   CanvasLoader,
   Contact,
+  DownArrowButton,
   EarthCanvas,
   Experience,
+  Footer,
   Hero,
   MoreButton,
   Navbar,
+  NotFoundPage,
   PageFloatButtons,
   ScrollArrowButton,
   StarsCanvas,

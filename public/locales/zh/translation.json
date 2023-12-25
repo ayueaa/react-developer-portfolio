@@ -16,7 +16,7 @@
   "about": {
     "title": "简介",
     "subTitle": "概览",
-    "content": "作为一名Python后端开发工程师，我擅长运用Flask和FastAPI等框架开发高效的Restful API，并能够有效地与前端团队进行沟通协作。同时我也具备使用Scrapy、Pandas和Spark处理大数据流程的能力。此外，我能够运用React实现简单的全栈页面开发。我致力于不断进步，努力成为一名全面的全栈开发者。"
+    "content": "作为一名Python后端开发工程师，我擅长运用Flask和FastAPI等框架开发高效的Restful API，并能有效地与前端团队进行沟通协作。同时我也具备使用Scrapy、Pandas和Spark处理大数据流程的能力。此外，我能够运用React实现简单的全栈开发。我致力于不断进步，努力成为一名全面的全栈开发者。"
   },
   "experience": {
     "title": "我的职业历程",
@@ -26,14 +26,14 @@
         "title": "文档工程师",
         "company_name": "中国石油天然气集团公司",
         "date": "2015年9月 - 2019年5月",
-        "points": ["负责文件管理和供应计算的 Python 自动化", "提供技术支持"]
+        "points": ["负责技术文件管理和文档自动化", "提供技术管理与支持"]
       },
       "1": {
         "title": "数据工程师",
         "company_name": "招商银行",
         "date": "2019年9月 - 2020年11月",
         "points": [
-          "负责应用系统的后端设计与开发，包括 Django、Flask、Tornado",
+          "负责应用系统的后端设计与开发，包括 Django、Flask、Tornado等",
           "处理数据 ETL 流程",
           "提供数据查询微服务 API"
         ]
@@ -42,13 +42,13 @@
         "title": "高级 Python 工程师",
         "company_name": "知道创宇",
         "date": "2020年11月 - 2022年3月",
-        "points": ["为 B2B 产品开发后端 RESTful API", "负责应用程序后端开发", "建立 CI/CD 流水线"]
+        "points": ["为产品开发后端 RESTful API", "App后端开发", "建立 CI/CD 流程及测试用例"]
       },
       "3": {
-        "title": "后端开发专家",
+        "title": "服务端开发专家",
         "company_name": "奇虎360",
         "date": "2022年3月 - 至今",
-        "points": ["负责 Spark 数据处理", "智能数据流管理", "熟练使用 Scrapy、FastAPI、Kafka、Spark、React"]
+        "points": ["Spark 大数据处理", "情报数据流管理", "服务端开发"]
       }
     }
   },
@@ -71,11 +71,11 @@
         "description": "一个使用 React开发的现代化的个人作品集, 结合Threejs、Framer Motion 等技术构建。可以作为个人网站的模板。"
       },
       "1": {
-        "name": "FastAPI IP Manage",
+        "name": "FastAPI Data Manage",
         "description": "一个使用 FastAPI 开发的后端项目，包括 MongoDB 和 JWT 用户系统。非常适合学习 FastAPI 或作为新项目的起点。"
       },
       "2": {
-        "name": "React IP Admin",
+        "name": "React Data Admin",
         "description": "一个使用 React 开发的前端项目，结合了 Typescript、Redux 和 Antd。是使用 React+hooks+antd 的最佳实践。"
       }
     }
@@ -83,13 +83,13 @@
   "blog": {
     "title": "我的博客",
     "subTitle": "博客文章",
-    "content": "我的博客深入探讨解决问题的方法、学习新技术和语言，专注于数据库、大数据和后端框架。主要围绕 Python，文章提供了有见地的示例和讨论。这些文章是对那些对创新解决方案感兴趣，以及对编程世界中新兴技术趋势探索感兴趣的人的资源。",
+    "content": "我的文章主要探讨日常开发中特殊问题的解决方法、学习新技术和语言，主要范围是数据库、大数据和后端框架。主要Demo编程语言为 Python。希望这些文章能对相似经历的的开发者们提供直接的帮助或者灵感。",
     "words": "字数",
     "reads": "阅读数"
   },
   "contact": {
     "title": "联系我",
-    "subTitle": "联系方式",
+    "subTitle": "如何联系",
     "form": {
       "name": "你的姓名",
       "defaultName": "你叫什么名字？",

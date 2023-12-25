@@ -1,4 +1,4 @@
-import { DoubleLeftOutlined, DoubleRightOutlined, FileSearchOutlined } from '@ant-design/icons';
+import { DoubleLeftOutlined, DoubleRightOutlined, DownOutlined, FileSearchOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { motion } from 'framer-motion';
 import React from 'react';
@@ -22,6 +22,32 @@ const AnimatedButton = ({ href, className }) => {
           />
         </div>
       </a>
+    </div>
+  );
+};
+
+const DownArrowButton = ({ href, className }) => {
+  const animateY = [0, 15, 0];
+
+  return (
+    <div className="absolute w-full bottom-0 mb-6 flex justify-center ">
+      {' '}
+      {/* 新增的样式 */}
+      <motion.div
+        animate={{ y: animateY }} // 垂直方向动画
+        transition={{
+          duration: 1.5,
+          repeat: Infinity,
+          repeatType: 'loop',
+        }}
+        className={`cursor-pointer ${className}`}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <a href={href} className="flex justify-center items-center">
+          <DownOutlined className="text-xl text-white" />
+        </a>
+      </motion.div>
     </div>
   );
 };
@@ -68,4 +94,4 @@ const ScrollArrowButton = ({ direction, scroll, className }) => {
   );
 };
 
-export { AnimatedButton, MoreButton, ScrollArrowButton };
+export { AnimatedButton, DownArrowButton, MoreButton, ScrollArrowButton };

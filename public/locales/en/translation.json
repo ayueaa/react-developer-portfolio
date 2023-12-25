@@ -85,11 +85,11 @@
         "description": "A modern personal portfolio built with React, Threejs, Framer Motion, and more. Can be used as a template for personal websites."
       },
       "1": {
-        "name": "FastAPI IP Manage",
+        "name": "FastAPI Data Manage",
         "description": "A backend project developed using FastAPI, with MongoDB and JWT and includes a user system. Great for learning FastAPI or as a starter for new projects."
       },
       "2": {
-        "name": "React IP Admin",
+        "name": "React Data Admin",
         "description": "A fronted project developed using React, with Typescript, Redux and Antd. It is the best practice to use React+hooks+antd."
       }
     }

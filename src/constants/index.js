@@ -184,7 +184,7 @@ const experiences = [
   },
   {
     title: 'experience.detail.1.title',
-    company_name: 'Cexperience.detail.1.company_name',
+    company_name: 'experience.detail.1.company_name',
     icon: cmb,
     iconBg: '#E6DEDD',
     date: 'experience.detail.1.date',

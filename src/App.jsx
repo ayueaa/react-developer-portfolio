@@ -9,6 +9,7 @@ import {
   Blogs,
   Contact,
   Experience,
+  Footer,
   Hero,
   Navbar,
   PageFloatButtons,
@@ -78,7 +79,9 @@ const App = () => {
           <div className="absolute inset-0">
             <Navbar />
             <Hero />
-            <AnimatedButton href="#about" />
+            <div className="hidden sm:block">
+              <AnimatedButton href="#about" />
+            </div>
           </div>
         </div>
 
@@ -101,10 +104,8 @@ const App = () => {
           <StarsCanvas />
           <Blogs />
           <Contact />
+          <Footer />
         </div>
-
-        {/* <Project /> */}
-        {/* <Feedbacks /> */}
       </div>
     </BrowserRouter>
   );
