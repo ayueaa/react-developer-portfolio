@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-import { herobgGif, herobgMbPreview, herobgMbVideo, herobgPreview, herobgVideo } from './assets';
+import { herobgPreview } from './assets';
 // eslint-disable-next-line import/no-unresolved
 import {
   About,
