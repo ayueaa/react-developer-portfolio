@@ -32,7 +32,7 @@ English | [简体中文](./README.zh_CN.md)
 </p>
 
  <h4>
-    <a href="http://.ayue.wang.com/">View Demo</a>
+    <a href="http://www.ayue.wang.com/">View Demo</a>
   <span> · </span>
     <a href="https://github.com/ayueaa/react-developer-portfolio/issues/">Report Bug</a>
 
