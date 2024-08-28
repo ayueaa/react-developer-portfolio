@@ -201,10 +201,18 @@ const experiences = [
   {
     title: 'experience.detail.3.title',
     company_name: 'experience.detail.3.company_name',
-    icon: s360,
+    icon: '',
     iconBg: '#E6DEDD',
     date: 'experience.detail.3.date',
     points: 'experience.detail.3.points',
+  },
+  {
+    title: 'experience.detail.4.title',
+    company_name: 'experience.detail.4.company_name',
+    icon: s360,
+    iconBg: '#E6DEDD',
+    date: 'experience.detail.4.date',
+    points: 'experience.detail.4.points',
   },
 ];
 

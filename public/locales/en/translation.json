@@ -55,12 +55,24 @@
         ]
       },
       "3": {
+        "title": "APP Backend Engineer",
+        "company_name": "Arktera AI(Part-time)",
+        "date": "June 2024 - Present",
+        "points": [
+          "Backend RestFul API development for Stocks community Application",
+          "Aws authentication and Sns notification and S3 storage management",
+          "AI chat bot api management",
+          "FastAPI | Cache | AWS | Spider | Websockets"
+        ]
+      },
+      "4": {
         "title": "Backend Development Specialist",
         "company_name": "360",
         "date": "Mar 2022 - Present",
         "points": [
           "Spark Data processing",
           "Intelligence data flow management",
+          "React data-task-admin-system development",
           "Scrapy | FastAPI | Kafka | Spark | React"
         ]
       }

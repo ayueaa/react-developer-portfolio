@@ -45,6 +45,12 @@
         "points": ["为产品开发后端 RESTful API", "App后端开发", "建立 CI/CD 流程及测试用例"]
       },
       "3": {
+        "title": "APP后端开发工程师",
+        "company_name": "Arktera AI(Part-time)",
+        "date": "2024年6月 - 至今",
+        "points": ["股票/Coins社区APP后端开发", "AWS用户认证、SNS消息推送、S3图像储存", "ChatGPT AI聊天机器人接入", "FastAPI | Cache | AWS | Spider | Websockets"]
+      },
+      "4": {
         "title": "服务端开发专家",
         "company_name": "奇虎360",
         "date": "2022年3月 - 至今",
