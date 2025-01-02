@@ -16,10 +16,10 @@
   "about": {
     "title": "Introduction",
     "subTitle": "Overview.",
-    "content": "Hi there! I'm a Python Developer with experience in frameworks like FastAPI and Flask. My skill set also extends to web scraping with Scrapy, data analysis with Pandas, and big data processing with PySpark. I'm beginner in React to create web interfaces with low-code components, aspiring to become a Full Stack Developer.Feel free to connect and discuss with me.",
+    "content": "Hi there! I'm a Python Developer and Junior React Engineer with experience in frameworks like FastAPI, Flask and React. My skill set includes web scraping with Scrapy, data analysis with Pandas, big data processing with PySpark, and basic Golang development. I'm proficient in utilizing Large Language Models (LLMs) for AI-assisted development and have deep experience as an LLM power user. My technical expertise extends to creating web interfaces with modern React components, and I'm continuously growing as a Full Stack Developer. Feel free to connect and discuss with me.",
     "cardTitle": {
       "0": "Web Developer",
-      "1": "React Learner",
+      "1": "React Developer",
       "2": "Backend Developer",
       "3": "Content Creator"
     }
@@ -61,8 +61,9 @@
         "points": [
           "Backend RestFul API development for Stocks community Application",
           "Aws authentication and Sns notification and S3 storage management",
-          "AI chat bot api management",
-          "FastAPI | Cache | AWS | Spider | Websockets"
+          "AI chat bot development with LangChain and OpenAI API integration",
+          "Asynchronous task queue system development",
+          "FastAPI | Cache | AWS | LangChain | Celery | Websockets"
         ]
       },
       "4": {
@@ -70,10 +71,12 @@
         "company_name": "360",
         "date": "Mar 2022 - Present",
         "points": [
-          "Spark Data processing",
-          "Intelligence data flow management",
-          "React data-task-admin-system development",
-          "Scrapy | FastAPI | Kafka | Spark | React"
+          "Large-scale data processing with Apache Spark and development of data pipelines",
+          "Distributed CAPTCHA service development using Golang",
+          "Development of large-scale backend systems using FastAPI and Flask",
+          "Independent development of a complete React-based task management system",
+          "Implementation of containerization and CI/CD automation workflows",
+          "Spark | FastAPI | Golang | React | Docker | K8s"
         ]
       }
     }

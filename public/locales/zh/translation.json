@@ -6,17 +6,23 @@
     "tech": "技术",
     "project": "项目",
     "blog": "博客",
-    "contact": "联系我"
+    "contact": "联系"
   },
   "hero": {
-    "hello": "嗨，我是",
+    "hello": "你好，我是",
     "name": "Yue",
-    "typeWords": ["Python工程师", "React开发者", "全栈开发追求者"]
+    "typeWords": ["Python工程师", "React开发者", "全栈工程师"]
   },
   "about": {
-    "title": "简介",
-    "subTitle": "概览",
-    "content": "作为一名Python后端开发工程师，我擅长运用Flask和FastAPI等框架开发高效的Restful API，并能有效地与前端团队进行沟通协作。同时我也具备使用Scrapy、Pandas和Spark处理大数据流程的能力。此外，我能够运用React实现简单的全栈开发。我致力于不断进步，努力成为一名全面的全栈开发者。"
+    "title": "个人简介",
+    "subTitle": "概览.",
+    "content": "你好！我是一名Python开发工程师和初级React工程师，在FastAPI、Flask和React等框架方面都有实战经验。我的技术栈包括使用Scrapy进行网络爬虫、使用Pandas进行数据分析、使用PySpark进行大数据处理，以及Golang基础开发。我擅长运用大语言模型(LLM)进行AI辅助开发，并且是一位深度的LLM使用者。我专注于使用现代React组件创建网页界面，正在朝着全栈开发工程师的方向持续成长。欢迎与我交流讨论！",
+    "cardTitle": {
+      "0": "Web开发",
+      "1": "React开发",
+      "2": "后端开发",
+      "3": "内容创作"
+    }
   },
   "experience": {
     "title": "我的职业历程",
@@ -48,13 +54,26 @@
         "title": "APP后端开发工程师",
         "company_name": "Arktera AI(Part-time)",
         "date": "2024年6月 - 至今",
-        "points": ["股票/Coins社区APP后端开发", "AWS用户认证、SNS消息推送、S3图像储存", "ChatGPT AI聊天机器人接入", "FastAPI | Cache | AWS | Spider | Websockets"]
+        "points": [
+          "股票/Coins社区APP后端开发",
+          "AWS用户认证、SNS消息推送、S3图像储存",
+          "基于LangChain和OpenAI API的AI聊天机器人开发",
+          "异步任务队列系统开发",
+          "FastAPI | Cache | AWS | LangChain | Celery | Websockets"
+        ]
       },
       "4": {
         "title": "服务端开发专家",
         "company_name": "奇虎360",
         "date": "2022年3月 - 至今",
-        "points": ["Spark 大数据处理", "情报数据流管理", "服务端开发"]
+        "points": [
+          "Apache Spark大数据处理与数据流水线开发",
+          "基于Golang的分布式验证码服务开发",
+          "使用FastAPI和Flask开发大型后端系统",
+          "独立React任务管理系统的前端开发",
+          "容器化部署与CI/CD自动化流程建设",
+          "Spark | FastAPI | Golang | React | Docker | K8s"
+        ]
       }
     }
   },
